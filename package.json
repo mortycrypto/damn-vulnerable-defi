@@ -8,17 +8,17 @@
 	},
 	"scripts": {
 		"unstoppable": "yarn hardhat test test/unstoppable/unstoppable.challenge.ts",
-		"truster": "yarn hardhat test test/truster/truster.challenge.js",
+		"truster": "yarn hardhat test test/truster/truster.challenge.ts",
 		"naive-receiver": "yarn hardhat test test/naive-receiver/naive-receiver.challenge.ts",
-		"side-entrance": "yarn hardhat test test/side-entrance/side-entrance.challenge.js",
-		"the-rewarder": "yarn hardhat test test/the-rewarder/the-rewarder.challenge.js",
-		"selfie": "yarn hardhat test test/selfie/selfie.challenge.js",
-		"compromised": "yarn hardhat test test/compromised/compromised.challenge.js",
-		"puppet": "yarn hardhat test test/puppet/puppet.challenge.js",
-		"puppet-v2": "yarn hardhat test test/puppet-v2/puppet-v2.challenge.js",
-		"free-rider": "yarn hardhat test test/free-rider/free-rider.challenge.js",
-		"backdoor": "yarn hardhat test test/backdoor/backdoor.challenge.js",
-		"climber": "yarn hardhat test test/climber/climber.challenge.js"
+		"side-entrance": "yarn hardhat test test/side-entrance/side-entrance.challenge.ts",
+		"the-rewarder": "yarn hardhat test test/the-rewarder/the-rewarder.challenge.ts",
+		"selfie": "yarn hardhat test test/selfie/selfie.challenge.ts",
+		"compromised": "yarn hardhat test test/compromised/compromised.challenge.ts",
+		"puppet": "yarn hardhat test test/puppet/puppet.challenge.ts",
+		"puppet-v2": "yarn hardhat test test/puppet-v2/puppet-v2.challenge.ts",
+		"free-rider": "yarn hardhat test test/free-rider/free-rider.challenge.ts",
+		"backdoor": "yarn hardhat test test/backdoor/backdoor.challenge.ts",
+		"climber": "yarn hardhat test test/climber/climber.challenge.ts"
 	},
 	"devDependencies": {
 		"@gnosis.pm/safe-contracts": "1.3.0",
