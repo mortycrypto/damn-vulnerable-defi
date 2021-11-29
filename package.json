@@ -9,7 +9,7 @@
 	"scripts": {
 		"unstoppable": "yarn hardhat test test/unstoppable/unstoppable.challenge.ts",
 		"truster": "yarn hardhat test test/truster/truster.challenge.js",
-		"naive-receiver": "yarn hardhat test test/naive-receiver/naive-receiver.challenge.js",
+		"naive-receiver": "yarn hardhat test test/naive-receiver/naive-receiver.challenge.ts",
 		"side-entrance": "yarn hardhat test test/side-entrance/side-entrance.challenge.js",
 		"the-rewarder": "yarn hardhat test test/the-rewarder/the-rewarder.challenge.js",
 		"selfie": "yarn hardhat test test/selfie/selfie.challenge.js",
