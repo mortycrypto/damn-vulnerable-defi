@@ -3,9 +3,21 @@
     {
       "name": "TokenPurchase",
       "inputs": [
-        { "type": "address", "name": "buyer", "indexed": true },
-        { "type": "uint256", "name": "eth_sold", "indexed": true },
-        { "type": "uint256", "name": "tokens_bought", "indexed": true }
+        {
+          "type": "address",
+          "name": "buyer",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "eth_sold",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "tokens_bought",
+          "indexed": true
+        }
       ],
       "anonymous": false,
       "type": "event"
@@ -13,9 +25,21 @@
     {
       "name": "EthPurchase",
       "inputs": [
-        { "type": "address", "name": "buyer", "indexed": true },
-        { "type": "uint256", "name": "tokens_sold", "indexed": true },
-        { "type": "uint256", "name": "eth_bought", "indexed": true }
+        {
+          "type": "address",
+          "name": "buyer",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "tokens_sold",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "eth_bought",
+          "indexed": true
+        }
       ],
       "anonymous": false,
       "type": "event"
@@ -23,9 +47,21 @@
     {
       "name": "AddLiquidity",
       "inputs": [
-        { "type": "address", "name": "provider", "indexed": true },
-        { "type": "uint256", "name": "eth_amount", "indexed": true },
-        { "type": "uint256", "name": "token_amount", "indexed": true }
+        {
+          "type": "address",
+          "name": "provider",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "eth_amount",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "token_amount",
+          "indexed": true
+        }
       ],
       "anonymous": false,
       "type": "event"
@@ -33,9 +69,21 @@
     {
       "name": "RemoveLiquidity",
       "inputs": [
-        { "type": "address", "name": "provider", "indexed": true },
-        { "type": "uint256", "name": "eth_amount", "indexed": true },
-        { "type": "uint256", "name": "token_amount", "indexed": true }
+        {
+          "type": "address",
+          "name": "provider",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "eth_amount",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "token_amount",
+          "indexed": true
+        }
       ],
       "anonymous": false,
       "type": "event"
@@ -43,9 +91,21 @@
     {
       "name": "Transfer",
       "inputs": [
-        { "type": "address", "name": "_from", "indexed": true },
-        { "type": "address", "name": "_to", "indexed": true },
-        { "type": "uint256", "name": "_value", "indexed": false }
+        {
+          "type": "address",
+          "name": "_from",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "_to",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "_value",
+          "indexed": false
+        }
       ],
       "anonymous": false,
       "type": "event"
@@ -53,9 +113,21 @@
     {
       "name": "Approval",
       "inputs": [
-        { "type": "address", "name": "_owner", "indexed": true },
-        { "type": "address", "name": "_spender", "indexed": true },
-        { "type": "uint256", "name": "_value", "indexed": false }
+        {
+          "type": "address",
+          "name": "_owner",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "_spender",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "_value",
+          "indexed": false
+        }
       ],
       "anonymous": false,
       "type": "event"
@@ -63,418 +135,839 @@
     {
       "name": "setup",
       "outputs": [],
-      "inputs": [{ "type": "address", "name": "token_addr" }],
+      "inputs": [
+        {
+          "type": "address",
+          "name": "token_addr"
+        }
+      ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 175875
+      "type": "function"
     },
     {
       "name": "addLiquidity",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "min_liquidity" },
-        { "type": "uint256", "name": "max_tokens" },
-        { "type": "uint256", "name": "deadline" }
+        {
+          "type": "uint256",
+          "name": "min_liquidity"
+        },
+        {
+          "type": "uint256",
+          "name": "max_tokens"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        }
       ],
       "constant": false,
       "payable": true,
-      "type": "function",
-      "gas": 82605
+      "type": "function"
     },
     {
       "name": "removeLiquidity",
       "outputs": [
-        { "type": "uint256", "name": "out" },
-        { "type": "uint256", "name": "out" }
+        {
+          "type": "uint256",
+          "name": "out"
+        },
+        {
+          "type": "uint256",
+          "name": "out"
+        }
       ],
       "inputs": [
-        { "type": "uint256", "name": "amount" },
-        { "type": "uint256", "name": "min_eth" },
-        { "type": "uint256", "name": "min_tokens" },
-        { "type": "uint256", "name": "deadline" }
+        {
+          "type": "uint256",
+          "name": "amount"
+        },
+        {
+          "type": "uint256",
+          "name": "min_eth"
+        },
+        {
+          "type": "uint256",
+          "name": "min_tokens"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 116814
+      "type": "function"
     },
-    { "name": "__default__", "outputs": [], "inputs": [], "constant": false, "payable": true, "type": "function" },
+    {
+      "name": "__default__",
+      "outputs": [],
+      "inputs": [],
+      "constant": false,
+      "payable": true,
+      "type": "function"
+    },
     {
       "name": "ethToTokenSwapInput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "min_tokens" },
-        { "type": "uint256", "name": "deadline" }
+        {
+          "type": "uint256",
+          "name": "min_tokens"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        }
       ],
       "constant": false,
       "payable": true,
-      "type": "function",
-      "gas": 12757
+      "type": "function"
     },
     {
       "name": "ethToTokenTransferInput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "min_tokens" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "recipient" }
+        {
+          "type": "uint256",
+          "name": "min_tokens"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "recipient"
+        }
       ],
       "constant": false,
       "payable": true,
-      "type": "function",
-      "gas": 12965
+      "type": "function"
     },
     {
       "name": "ethToTokenSwapOutput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_bought" },
-        { "type": "uint256", "name": "deadline" }
+        {
+          "type": "uint256",
+          "name": "tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        }
       ],
       "constant": false,
       "payable": true,
-      "type": "function",
-      "gas": 50455
+      "type": "function"
     },
     {
       "name": "ethToTokenTransferOutput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_bought" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "recipient" }
+        {
+          "type": "uint256",
+          "name": "tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "recipient"
+        }
       ],
       "constant": false,
       "payable": true,
-      "type": "function",
-      "gas": 50663
+      "type": "function"
     },
     {
       "name": "tokenToEthSwapInput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_sold" },
-        { "type": "uint256", "name": "min_eth" },
-        { "type": "uint256", "name": "deadline" }
+        {
+          "type": "uint256",
+          "name": "tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "min_eth"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 47503
+      "type": "function"
     },
     {
       "name": "tokenToEthTransferInput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_sold" },
-        { "type": "uint256", "name": "min_eth" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "recipient" }
+        {
+          "type": "uint256",
+          "name": "tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "min_eth"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "recipient"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 47712
+      "type": "function"
     },
     {
       "name": "tokenToEthSwapOutput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "eth_bought" },
-        { "type": "uint256", "name": "max_tokens" },
-        { "type": "uint256", "name": "deadline" }
+        {
+          "type": "uint256",
+          "name": "eth_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "max_tokens"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 50175
+      "type": "function"
     },
     {
       "name": "tokenToEthTransferOutput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "eth_bought" },
-        { "type": "uint256", "name": "max_tokens" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "recipient" }
+        {
+          "type": "uint256",
+          "name": "eth_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "max_tokens"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "recipient"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 50384
+      "type": "function"
     },
     {
       "name": "tokenToTokenSwapInput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_sold" },
-        { "type": "uint256", "name": "min_tokens_bought" },
-        { "type": "uint256", "name": "min_eth_bought" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "token_addr" }
+        {
+          "type": "uint256",
+          "name": "tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "min_tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "min_eth_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "token_addr"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 51007
+      "type": "function"
     },
     {
       "name": "tokenToTokenTransferInput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_sold" },
-        { "type": "uint256", "name": "min_tokens_bought" },
-        { "type": "uint256", "name": "min_eth_bought" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "recipient" },
-        { "type": "address", "name": "token_addr" }
+        {
+          "type": "uint256",
+          "name": "tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "min_tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "min_eth_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "recipient"
+        },
+        {
+          "type": "address",
+          "name": "token_addr"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 51098
+      "type": "function"
     },
     {
       "name": "tokenToTokenSwapOutput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_bought" },
-        { "type": "uint256", "name": "max_tokens_sold" },
-        { "type": "uint256", "name": "max_eth_sold" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "token_addr" }
+        {
+          "type": "uint256",
+          "name": "tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "max_tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "max_eth_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "token_addr"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 54928
+      "type": "function"
     },
     {
       "name": "tokenToTokenTransferOutput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_bought" },
-        { "type": "uint256", "name": "max_tokens_sold" },
-        { "type": "uint256", "name": "max_eth_sold" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "recipient" },
-        { "type": "address", "name": "token_addr" }
+        {
+          "type": "uint256",
+          "name": "tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "max_tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "max_eth_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "recipient"
+        },
+        {
+          "type": "address",
+          "name": "token_addr"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 55019
+      "type": "function"
     },
     {
       "name": "tokenToExchangeSwapInput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_sold" },
-        { "type": "uint256", "name": "min_tokens_bought" },
-        { "type": "uint256", "name": "min_eth_bought" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "exchange_addr" }
+        {
+          "type": "uint256",
+          "name": "tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "min_tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "min_eth_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "exchange_addr"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 49342
+      "type": "function"
     },
     {
       "name": "tokenToExchangeTransferInput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_sold" },
-        { "type": "uint256", "name": "min_tokens_bought" },
-        { "type": "uint256", "name": "min_eth_bought" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "recipient" },
-        { "type": "address", "name": "exchange_addr" }
+        {
+          "type": "uint256",
+          "name": "tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "min_tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "min_eth_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "recipient"
+        },
+        {
+          "type": "address",
+          "name": "exchange_addr"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 49532
+      "type": "function"
     },
     {
       "name": "tokenToExchangeSwapOutput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_bought" },
-        { "type": "uint256", "name": "max_tokens_sold" },
-        { "type": "uint256", "name": "max_eth_sold" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "exchange_addr" }
+        {
+          "type": "uint256",
+          "name": "tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "max_tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "max_eth_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "exchange_addr"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 53233
+      "type": "function"
     },
     {
       "name": "tokenToExchangeTransferOutput",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "uint256", "name": "tokens_bought" },
-        { "type": "uint256", "name": "max_tokens_sold" },
-        { "type": "uint256", "name": "max_eth_sold" },
-        { "type": "uint256", "name": "deadline" },
-        { "type": "address", "name": "recipient" },
-        { "type": "address", "name": "exchange_addr" }
+        {
+          "type": "uint256",
+          "name": "tokens_bought"
+        },
+        {
+          "type": "uint256",
+          "name": "max_tokens_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "max_eth_sold"
+        },
+        {
+          "type": "uint256",
+          "name": "deadline"
+        },
+        {
+          "type": "address",
+          "name": "recipient"
+        },
+        {
+          "type": "address",
+          "name": "exchange_addr"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 53423
+      "type": "function"
     },
     {
       "name": "getEthToTokenInputPrice",
-      "outputs": [{ "type": "uint256", "name": "out" }],
-      "inputs": [{ "type": "uint256", "name": "eth_sold" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
+      "inputs": [
+        {
+          "type": "uint256",
+          "name": "eth_sold"
+        }
+      ],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 5542
+      "type": "function"
     },
     {
       "name": "getEthToTokenOutputPrice",
-      "outputs": [{ "type": "uint256", "name": "out" }],
-      "inputs": [{ "type": "uint256", "name": "tokens_bought" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
+      "inputs": [
+        {
+          "type": "uint256",
+          "name": "tokens_bought"
+        }
+      ],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 6872
+      "type": "function"
     },
     {
       "name": "getTokenToEthInputPrice",
-      "outputs": [{ "type": "uint256", "name": "out" }],
-      "inputs": [{ "type": "uint256", "name": "tokens_sold" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
+      "inputs": [
+        {
+          "type": "uint256",
+          "name": "tokens_sold"
+        }
+      ],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 5637
+      "type": "function"
     },
     {
       "name": "getTokenToEthOutputPrice",
-      "outputs": [{ "type": "uint256", "name": "out" }],
-      "inputs": [{ "type": "uint256", "name": "eth_bought" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
+      "inputs": [
+        {
+          "type": "uint256",
+          "name": "eth_bought"
+        }
+      ],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 6897
+      "type": "function"
     },
     {
       "name": "tokenAddress",
-      "outputs": [{ "type": "address", "name": "out" }],
+      "outputs": [
+        {
+          "type": "address",
+          "name": "out"
+        }
+      ],
       "inputs": [],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 1413
+      "type": "function"
     },
     {
       "name": "factoryAddress",
-      "outputs": [{ "type": "address", "name": "out" }],
+      "outputs": [
+        {
+          "type": "address",
+          "name": "out"
+        }
+      ],
       "inputs": [],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 1443
+      "type": "function"
     },
     {
       "name": "balanceOf",
-      "outputs": [{ "type": "uint256", "name": "out" }],
-      "inputs": [{ "type": "address", "name": "_owner" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_owner"
+        }
+      ],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 1645
+      "type": "function"
     },
     {
       "name": "transfer",
-      "outputs": [{ "type": "bool", "name": "out" }],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "address", "name": "_to" },
-        { "type": "uint256", "name": "_value" }
+        {
+          "type": "address",
+          "name": "_to"
+        },
+        {
+          "type": "uint256",
+          "name": "_value"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 75034
+      "type": "function"
     },
     {
       "name": "transferFrom",
-      "outputs": [{ "type": "bool", "name": "out" }],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "address", "name": "_from" },
-        { "type": "address", "name": "_to" },
-        { "type": "uint256", "name": "_value" }
+        {
+          "type": "address",
+          "name": "_from"
+        },
+        {
+          "type": "address",
+          "name": "_to"
+        },
+        {
+          "type": "uint256",
+          "name": "_value"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 110907
+      "type": "function"
     },
     {
       "name": "approve",
-      "outputs": [{ "type": "bool", "name": "out" }],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "address", "name": "_spender" },
-        { "type": "uint256", "name": "_value" }
+        {
+          "type": "address",
+          "name": "_spender"
+        },
+        {
+          "type": "uint256",
+          "name": "_value"
+        }
       ],
       "constant": false,
       "payable": false,
-      "type": "function",
-      "gas": 38769
+      "type": "function"
     },
     {
       "name": "allowance",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [
-        { "type": "address", "name": "_owner" },
-        { "type": "address", "name": "_spender" }
+        {
+          "type": "address",
+          "name": "_owner"
+        },
+        {
+          "type": "address",
+          "name": "_spender"
+        }
       ],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 1925
+      "type": "function"
     },
     {
       "name": "name",
-      "outputs": [{ "type": "bytes32", "name": "out" }],
+      "outputs": [
+        {
+          "type": "bytes32",
+          "name": "out"
+        }
+      ],
       "inputs": [],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 1623
+      "type": "function"
     },
     {
       "name": "symbol",
-      "outputs": [{ "type": "bytes32", "name": "out" }],
+      "outputs": [
+        {
+          "type": "bytes32",
+          "name": "out"
+        }
+      ],
       "inputs": [],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 1653
+      "type": "function"
     },
     {
       "name": "decimals",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 1683
+      "type": "function"
     },
     {
       "name": "totalSupply",
-      "outputs": [{ "type": "uint256", "name": "out" }],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": "out"
+        }
+      ],
       "inputs": [],
       "constant": true,
       "payable": false,
-      "type": "function",
-      "gas": 1713
+      "type": "function"
     }
   ],
   "evm": {
